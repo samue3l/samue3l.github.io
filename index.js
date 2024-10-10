@@ -4,5 +4,27 @@ document.getElementById('nameButton').addEventListener('click', function(){
 });
 
 document.getElementById('profileImage').addEventListener('click', function(){
-    this.classList.toggle('enlarge');
+    if (this.style.width === '400px') {
+        this.style.width = '200px';  
+        this.style.height = 'auto';
+    } else {
+        this.style.width = '400px';  
+        this.style.height = 'auto';
+    }
+});
+
+
+const navLinks = document.querySelectorAll('nav a');
+
+
+navLinks.forEach(link => {
+    link.addEventListener('mouseover', function() {
+        this.style.color = 'red';  
+        this.style.fontSize = '18px';  
+    });
+
+    link.addEventListener('mouseout', function() {
+        this.style.color = 'black';  
+        this.style.fontSize = '16px';  
+    });
 });

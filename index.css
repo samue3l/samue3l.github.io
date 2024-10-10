@@ -47,3 +47,7 @@ td {
     padding: 10px;
     border: 1px solid #050505;
 }
+
+#nameButton{
+    background-color: rgb(251, 251, 251);
+}
