@@ -1,0 +1,49 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    background-color: rgb(252, 229, 232);
+    color: rgb(142, 114, 120);
+    margin: 15pt;
+}
+h1{
+    
+    font-size: 26pt;
+    color: darkred;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19pt;
+    color: lightslategray
+}
+h3{  
+    font-size: 16pt;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10pt;
+}
+ul{
+    font-size: 10pt;
+}
+a{
+    font-size: 11pt;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+    background-color: white;
+}
+a:visited{
+    color: purple;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #050505;
+}
