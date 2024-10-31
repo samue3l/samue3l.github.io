@@ -53,14 +53,16 @@ td {
 }
 
 nav {
-    background-color: #585757;
-    padding:  0.5px 0;
+    background-color:rgb(96, 95, 95);
+    padding:  10px 0;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -68,9 +70,10 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(234, 226, 226);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 23px;
+    transition: 0.3s ease; font-size: 0.3s ease; /*smooth hover */
 }
 
 nav ul li a:hover {
