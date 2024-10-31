@@ -1,14 +1,14 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     font-size: 12pt;
     background-color: rgb(252, 229, 232);
     color: rgb(142, 114, 120);
     margin: 15pt;
 }
 h1{
-    
-    font-size: 26pt;
-    color: darkred;
+    font-family: Lucida;
+    font-size: 40pt;
+    color: grey;
 }
 h2{
     font-family: 'Times New Roman', Times, serif;
@@ -51,3 +51,29 @@ td {
 #nameButton{
     background-color: rgb(251, 251, 251);
 }
+
+nav {
+    background-color: #585757;
+    padding:  0.5px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
