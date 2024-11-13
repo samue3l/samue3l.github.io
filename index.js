@@ -1,30 +1,15 @@
-document.getElementById('nameButton').addEventListener('click', function(){
-    const name = prompt("Enter your name:");
-    document.getElementById('nameDisplay').textContent = 'Hello ' + name + '!';
-});
+// Header 
+let MenuBtn = document.getElementById('MenuBtn')
 
-document.getElementById('profileImage').addEventListener('click', function(){
-    if (this.style.width === '400px') {
-        this.style.width = '200px';  
-        this.style.height = 'auto';
-    } else {
-        this.style.width = '400px';  
-        this.style.height = 'auto';
-    }
-});
-
-
-const navLinks = document.querySelectorAll('nav a');
-
-
-navLinks.forEach(link => {
-    link.addEventListener('mouseover', function() {
-        this.style.color = 'red';  
-        this.style.fontSize = '18px';  
-    });
-
-    link.addEventListener('mouseout', function() {
-        this.style.color = 'black';  
-        this.style.fontSize = '16px';  
-    });
-});
+MenuBtn.addEventListener('click', function(e){
+    document.querySelector('body').classList.toggle('mobile-nav-active');
+    this.classList.toggle('fa-xmark')
+})
+// Typing effect 
+let typed = new Typed('#auto-input', {
+    strings:[ ' 3rd year BTM Student At TMU!'],
+    typeSpeed: 85,
+    backSpeed: 60,
+    backDelay: 30,
+    loop: true,
+}) 

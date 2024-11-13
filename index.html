@@ -1,27 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width = device-width, initial-scale=1.0">
-    <title> My Web Page </title>
-    <link rel ="stylesheet" href ="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My Portfolio</title>
 </head>
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href ="about.html">About</a></li>
-        <li><a href="https://ca.linkedin.com/">Linkedin </a></li>
-        <li><a href="Contact.html"> Contact Me </a></li>
-    </ul>
-</nav>
 <body>
-    <h1> Samuel Oni </h1>
-    <button id="nameButton">Enter Your Name</button>
-    <p id="nameDisplay"></p>
-</body>
-<img id="profileImage" src="samm.jpg" alt="Profile Image" width="200px">
+    <header>
+        <div class="profile">
+            <img src="img/Iimg1.jpg"alt = "Samuel">
+            <h1> Samuel Oni </h1>
+            <div class = "social-icons">
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://medium.com/@samuel.oni/digitization-of-the-food-industry-7474f0ccc9a2"><i class="fa-brands fa-medium"></i></a>
+            </div>
+        </div>
 
-<body>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="About.html"><i class="fa-solid fa-user"></i>About</a></li>
+                <li><a href="education.html"><i class="fa-solid fa-graduation-cap"></i>Education</a></li>
+                <li><a href="#"><i class="fa-solid fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+            </ul>
+
+        </nav>
+        <div class = "footer">
+            <p>&copy;Copyright 2024 <br> Designed by <a href="index.html">Samuel Oni!</a></p>
+        </div>
+    </header>
+    <i class="fa-solid fa-bars" id="MenuBtn"></i>
+    <main>
+        <section id = "Home">
+            <div class = "Home-row">
+                <h1> Hi, I'm <br> Samuel Oni. <span></span></h1>
+                <p>A <span id="auto-input"></span></p>
+                <a href ="#" class="btn"> Download Resume</a>
+            </div>
+        </section>
+               
+    </main>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

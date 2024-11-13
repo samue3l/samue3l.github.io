@@ -1,46 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-    <link rel="stylesheet" href="Contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <div class="form-container">
-        <h1>Contact</h1>
-        <form id="contactForm">
-            <p>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            </p>
-            <p>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            </p>
-            <p>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            </p>
-            <p>
-            <label>Preferred Contact Method:</label>
-            <input type="radio" id="Phone" name="contact-method" value="Phone" required> Phone
-            <input type="radio" id="Email" name="contact-method" value="Email" required> Email
-            </p>
-            <p>
-            <label>Area of Expertise:</label>
-             <input type="checkbox" id="hr" name="expertise" value="Human Resource"> Human Resource
-            <input type="checkbox" id="pm" name="expertise" value="Project Management"> Project Management
-             <input type="checkbox" id="da" name="expertise" value="Data Analyst"> Data Analyst
-            <input type="checkbox" id="cybersecurity" name="expertise" value="Cybersecurity"> Cybersecurity
-    
-            </p>
-            <p>
-            <button type="submit">Submit</button>
-            <button type="reset">Clear</button>
-            </p>
-        </form>
-    </div>
-    <script src="script.js"></script>
+  <header>
+    <nav>
+      <ul class="nav-bar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact" class="contact-section">
+      <h1>Contact Me</h1>
+      <p>I’d love to hear from you! Use the form below or reach out directly.</p>
+      <form action="#" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="contact.js"></script>
 </body>
 </html>
