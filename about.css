@@ -91,3 +91,19 @@ body {
         gap: 10px;
     }
 }
+/* Style for images in the accessibility section */
+.accessibility img {
+    max-width: 100%; /* Ensures the image doesn't exceed its container width */
+    height: auto;    /* Maintains the aspect ratio */
+    display: block;  /* Centers images in block context */
+    margin: 10px auto; /* Adds spacing and centers them vertically */
+    border-radius: 10px; /* Gives images rounded corners for aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .accessibility img {
+        max-width: 90%; /* Shrinks the image size slightly for smaller screens */
+    }
+}

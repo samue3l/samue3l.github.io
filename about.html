@@ -22,14 +22,46 @@
     </header>
 
     <!-- Main Content -->
-    <main class="about-section">
-        <img src="img/IMG2.jpg" alt="Samuel Oni" class="profile-img">
+    <!-- <main class="about-section">
+        <img src="img/IMG2.jpg" alt="Samuel Oni with a smirk  smile." class="profile-img">
+        <button onclick="showAltText('IMG2')">Show Alt Text for Image 3</button>
         <div class="about-text">
             <h1>About Me</h1>
-            <p>
-                Work in progress.......
-            </p>
-        </div>
+            <p>Work in progress...</p>
+        </div> -->
+
+        <!-- Accessibility Components -->
+        <section class="accessibility">
+            <h2>Accessibility Features</h2>
+
+            <!-- Text Resize Button -->
+            <button onclick="resizeText('larger')">Increase Text Size</button>
+            <button onclick="resizeText('default')">Reset Text Size</button>
+
+            <!-- Colorblind Mode Toggle -->
+            <button onclick="toggleColorMode()">Toggle Colorblind Mode</button>
+
+            <!-- Alt Text Display -->
+            <div>
+                <img src="img/image1.jpg" alt="Allen Gardens" id="img1">
+                <img src="img/image2.jpg" alt="Scenic view of a park during summer" id="img2">
+                <img src="img/image3.jpg" alt="Close up image of a koi pond" id="img3">
+                <button onclick="showAltText('img1')">Show Alt Text for Image 1</button>
+                <button onclick="showAltText('img2')">Show Alt Text for Image 2</button>
+                <button onclick="showAltText('img3')">Show Alt Text for Image 3</button>
+            </div>
+
+            <!-- Audio with Caption -->
+            <figure>
+                <audio controls>
+                    <source src="About me.m4a" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <figcaption>Audio recording to About me page. (Personal Recording, Nov 2024)</figcaption>
+            </figure>
+        </section>
     </main>
+
+    <script src="about.js"></script>
 </body>
 </html>
