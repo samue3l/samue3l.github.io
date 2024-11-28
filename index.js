@@ -7,7 +7,7 @@ MenuBtn.addEventListener('click', function(e){
 })
 // Typing effect 
 let typed = new Typed('#auto-input', {
-    strings:[ ' 3rd year BTM Student At TMU!'],
+    strings:[ ' 4th year BTM Student At TMU!'],
     typeSpeed: 85,
     backSpeed: 60,
     backDelay: 30,
