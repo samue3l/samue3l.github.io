@@ -24,3 +24,6 @@ function showAltText(imageId) {
     const img = document.getElementById(imageId);
     alert(img.alt);
 }
+
+
+

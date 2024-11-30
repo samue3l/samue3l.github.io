@@ -4,63 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="all.css">
 </head>
 <body>
     <!-- Navigation Bar -->
     <header>
-        <nav class="navbar">
-            <div class="logo">Samuel Oni</div>
-            <ul class="nav-links">
+        <nav>
+            <ul class="nav-bar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="education.html">Education </a></li>
+                <li><a href="education.html">Education</a></li>
                 <li><a href="SEO.html">SEO</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Content -->
+    <!-- Accessibility Features -->
+    <section class="accessibility">
+        <button onclick="resizeText('larger')">Increase Text Size</button>
+        <button onclick="resizeText('default')">Reset Text Size</button>
+        <button onclick="toggleColorMode()">Toggle Colorblind Mode</button>
+    </section>
+
+    <!-- About Section -->
     <main class="about-section">
-        <img src="img/IMG2.jpg" alt="Samuel Oni with a smirk  smile." class="profile-img">
-        <button onclick="showAltText('IMG2')">Show Alt Text for Image 3</button>
         <div class="about-text">
             <h1>About Me</h1>
-            <p>Work in progress...</p>
-        </div> 
+            <p>Welcome! This is a detailed description about myself, my journey, and what I enjoy.</p>
+        </div>
+        <div class="about-image-text">
+            <img src="img/IMG2.jpg"  class="profile-img">
+            <p>Hi, I’m Samuel Oni, and welcome to my portfolio!
 
-        <!-- Accessibility Components -->
-        <section class="accessibility">
-            <h2>Accessibility Features</h2>
-
-            <!-- Text Resize Button -->
-            <button onclick="resizeText('larger')">Increase Text Size</button>
-            <button onclick="resizeText('default')">Reset Text Size</button>
-
-            <!-- Colorblind Mode Toggle -->
-            <button onclick="toggleColorMode()">Toggle Colorblind Mode</button>
-
-            <!-- Alt Text Display -->
-            <div>
-                <img src="img/image1.jpg" alt="Allen Gardens" id="img1">
-                <img src="img/image2.jpg" alt="Scenic view of a park during summer" id="img2">
-                <img src="img/image3.jpg" alt="Close up image of a koi pond" id="img3">
+                I’m a 4th year university student at T.M.U  currently pursuing a major in Business Technology Management. My passion for solving complex problems, organizing ideas, and working with people naturally led me to this field. I’ve always been fascinated by how technology and teamwork come together to achieve big goals. My dream is to become a project manager, where I can use my skills in strategic planning and leadership to guide projects from start to finish, creating meaningful and innovative solutions along the way.<br>
                 
-                <button onclick="showAltText('img1')">Show Alt Text for Image 1</button>
-                <button onclick="showAltText('img2')">Show Alt Text for Image 2</button>
-                <button onclick="showAltText('img3')">Show Alt Text for Image 3</button>
-            </div>
+                <br>Outside of academics, sports are a big part of who I am. I’ve been playing representative volleyball since high school, and it’s been more than just a sport for me—it’s a life teacher. Volleyball has shown me the value of working as a team, staying dedicated to the grind, and staying calm under pressure. Whether it’s an intense game or an everyday challenge, these lessons stick with me and help me grow as a person.<br>
+                
+               <br>When I’m not on the volleyball court or hitting the books, you’ll likely find me watching basketball. I’m a huge Toronto Raptors fan, and Pascal Siakam is my favorite player. What I love about Siakam is his journey and how he worked his way up and keeps improving every day. His determination, versatility, and drive inspire me to keep pushing my own limits, no matter what I’m doing.<br>
+                
+                <br>But life isn’t all about work and competition, I also love spending quality time with the people who matter most to me. Some of my favorite memories are simple yet unforgettable: sitting around a campfire with friends, roasting marshmallows, laughing, and sharing stories under the stars. Moments like these remind me that it’s important to find balance, stay connected, and appreciate the little joys that life offers.</p>
+        </div>
 
-            <!-- Audio with Caption -->
-            <figure>
-                <audio controls>
-                    <source src="About me.m4a" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-                <figcaption>Audio recording to About me page. (Personal Recording, Nov 2024)</figcaption>
-            </figure>
+        <!-- Photo Album -->
+        <section class="photo-album">
+            <h2>Photo Album</h2>
+            <div>
+                <img src="img/image1.jpg" alt="A serene view of Woodbine Beach featuring soft golden sands, gentle waves lapping the shoreline" id="img1">
+                <button onclick="showAltText('img1')">Woodbine Beach </button>
+            </div>
+            <div>
+                <img src="img/image2.jpg" alt="A picture I took at Allens gardens featuring a koi pond surrounded by great greenery and vibrant red flowers." id="img2">
+                <button onclick="showAltText('img2')">Allens Gardens</button>
+            </div>
+            <div>
+                <img src="img/c.firee.jpg" alt="A camp fire with my friends." id="firee">
+                <button onclick="showAltText('firee')">Camp Fire</button>
+            </div>
+            <div>
+                <img src="img/Ago.jpg" alt="A picture I took when I visited the AGO this summer,dimly-lit exhibition space showcasing artwork and sculptures, creating a contemplative and modern ambiance." id="AGO">
+                <button onclick="showAltText('AGO')">A.G.O</button>
+            </div>
+            <div>
+                <img src="img/cloma.jpg" alt="A picture I took of my friends this fall when we visited Casa Loma" id="cloma">
+                <button onclick="showAltText('cloma')">Cassaloma</button>
+            </div>
+            
         </section>
+
+        <!-- Audio Recording -->
+        <figure class="audio-recording">
+            <audio controls>
+                <source src="About me.m4a" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <figcaption>Audio recording about this page (Nov 2024).</figcaption>
+        </figure>
     </main>
 
     <script src="about.js"></script>

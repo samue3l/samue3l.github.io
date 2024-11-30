@@ -1,14 +1,3 @@
-/* General Reset */
-body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-    background: #f9f9f9;
-    color: #333;
-    overflow-x: hidden;
-  }
-  
   /* Navigation Bar */
   nav {
     background: #333;
@@ -38,7 +27,6 @@ body, html {
     transform: scale(1.1);
     color: #fff;
   }
-  
   /* Contact Section */
   .contact-section {
     text-align: center;
@@ -94,4 +82,91 @@ body, html {
     transform: translateY(0);
     opacity: 1;
   }
-  
+  /* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    overflow-x: hidden;
+  }
+
+
+  /* Accessibility Features */
+.accessibility {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+/* About Section */
+.about-section {
+    padding: 20px;
+}
+
+.about-text {
+    margin-bottom: 20px;
+}
+
+.about-image-text {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Photo Album */
+.photo-album {
+    margin-top: 20px;
+}
+
+.photo-album h2 {
+    margin-bottom: 10px;
+}
+
+.photo-album div {
+    display: inline-block;
+    margin: 10px;
+}
+
+.photo-album img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-album button {
+    display: block;
+    margin-top: 5px;
+    background-color: grey;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Audio Section */
+.audio-recording {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-image-text {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
